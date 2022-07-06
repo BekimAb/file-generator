@@ -20,10 +20,26 @@ function generateMarkdown(data) {
   console.log("data from index.js", data)
   return `# ${data.title}
 
-
   ## Description
 
   ${data.description}
+
+  ## Table of Contents 
+
+  *[Installation](#installation)
+
+  *[Usage](#usage)
+
+  *[License](#license)
+
+  *[Contributing](#contributing)
+
+  *[Tests](#tests)
+
+  *[Github](#github)
+
+  *[Email](#email)
+
 
   ## Installation
 
@@ -32,6 +48,24 @@ function generateMarkdown(data) {
   ## License
   ${renderLicenseBadge(data.license)}
   ${renderLicenseSection(data.license)}
+
+  ## Contributing
+
+  ${data.contributing}
+
+  ## Tests
+
+  ${data.tests}
+
+  ## Github
+
+  You can see more of my work at [${data.github}](https://github.com/${data.github})
+
+  ## Email
+
+  You can contact me with any questions at ${data.emailAddress}
+
+
 
 `;
 }

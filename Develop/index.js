@@ -18,11 +18,6 @@ const questions = [
     },
     {
         type: "input",
-        name: "table of contents",
-        message: "Write out the table of contents"
-    },
-    {
-        type: "input",
         name: "installation",
         message: "Write out steps to install your project"
     },
@@ -31,13 +26,12 @@ const questions = [
         name: "usage",
         message: "Write out the usage of the project"
         
-
     },
     {
         type: "list",
         name: "license",
         message: "What license is the project under?",
-        choices: ["apache-2.0", "gpl", "isc", "mit", "none"]
+        choices: ["apache 2.0", "gpl", "isc", "mit", "none"]
     },
     {
         type: "input",
@@ -56,7 +50,7 @@ const questions = [
     },
     {
         type: "input",
-        name: "email address",
+        name: "emailAddress",
         message: "write out your email"
     },
     
